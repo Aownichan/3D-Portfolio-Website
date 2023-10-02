@@ -24,6 +24,13 @@ const Computers = () => {
 }
 
 const ComputersCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  // useEffect(() => {
+  //   const mediaQuery = window.matchMedia('(max-width: 500px)')
+  // }, [])
+
+
   return (
     <Canvas
       camera={{ position: [20, 3, 5], fov: 25 }}
