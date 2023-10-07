@@ -4,7 +4,6 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
@@ -15,7 +14,7 @@ import {
     git,
     docker,
     upwork,
-    MQL,
+    mql,
     carrent,
     jobit,
     tripguide,
@@ -70,10 +69,6 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
@@ -112,7 +107,7 @@ import {
       title: "Article Writer",
       company_name: "UpWork",
       icon: upwork,
-      iconBg: "#383E56",
+      iconBg: "#E6DEDD",
       date: "December 2020 - Present",
       points: [
         "Writing well-researched articles on various topics including technology, business, and finance.",
@@ -125,7 +120,7 @@ import {
       title: "SEO/Wordpress Manager",
       company_name: "UpWork",
       icon: upwork,
-      iconBg: "#383E56",
+      iconBg: "#E6DEDD",
       date: "November 2022 - Present",
       points: [
         "Optimizing websites to increase organic traffic and improve search engine rankings.",
@@ -136,8 +131,8 @@ import {
     },
     {
       title: "Fullstack Developer",
-      company_name: "MQL Developer",
-      icon: MQL,
+      company_name: "MQL Development",
+      icon: mql,
       iconBg: "#E6DEDD",
       date: "September 2023 - Present",
       points: [
@@ -220,13 +215,13 @@ import {
       source_code_link: "https://github.com/Aownichan/SteamPunk-project",
     },
     {
-      name: "IMS (Inventory Management System)",
+      name: "IMS",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
           name: "C#",
-          color: "indigo-text-gradient",
+          color: "tertiary-text-gradient",
         },
         {
           name: ".NET",
