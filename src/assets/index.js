@@ -20,6 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import express from "./tech/express.png";
 
 import upwork from "./company/upwork.png";
 import mql from "./company/mql.png";
@@ -58,4 +59,5 @@ export {
   tripguide,
   upwork,
   mql,
+  express,
 };

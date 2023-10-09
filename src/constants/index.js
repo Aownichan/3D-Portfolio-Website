@@ -19,6 +19,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    express,
   } from "../assets";
   
   export const navLinks = [
@@ -69,8 +70,20 @@ import {
       icon: javascript,
     },
     {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Express JS",
+      icon: express,
+    },
+    {
       name: "React JS",
       icon: reactjs,
+    },
+    {
+      name: "Node JS",
+      icon: nodejs,
     },
     {
       name: "Redux Toolkit",
@@ -79,14 +92,6 @@ import {
     {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
     {
       name: "Three JS",
@@ -175,7 +180,7 @@ import {
     {
       name: "Express Charity",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "An online charity management platform for a UK-based NGO organization (Global Reach). Highly focused on data visualization (graphs, data grids, custom cards, etc.), with modules on user management, beneficiary verification, real-time-chat, and donation trails.",
       tags: [
         {
           name: "MERN",
@@ -196,7 +201,7 @@ import {
     {
       name: "SteamPunk",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A frontend focused digital game store. Contains pages with moving backgrounds, animated buttons, and imbedded video trailers. Backend focuses on user management (login/signup), and an admin portal to manage registered users.",
       tags: [
         {
           name: "HTML 5",
@@ -215,9 +220,9 @@ import {
       source_code_link: "https://github.com/Aownichan/SteamPunk-project",
     },
     {
-      name: "IMS",
+      name: "IMS (Inventory Management System)",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A beautiful desktop application for managing inventory and performing CRUD operations. Contains modules for managing products and product details (quantity, price), generating sales receipt, and a buyers portal.",
       tags: [
         {
           name: "C#",
