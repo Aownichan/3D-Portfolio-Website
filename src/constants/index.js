@@ -20,6 +20,7 @@ import {
     tripguide,
     threejs,
     express,
+    mui,
   } from "../assets";
   
   export const navLinks = [
@@ -84,6 +85,10 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
+    },
+    {
+      name: "Material UI",
+      icon: mui,
     },
     {
       name: "Redux Toolkit",
