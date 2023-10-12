@@ -40,15 +40,15 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "MERN Developer",
       icon: web,
     },
     {
-      title: "React Developer",
+      title: ".NET Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Documentation Specialist",
       icon: backend,
     },
     {
@@ -140,7 +140,7 @@ import {
       ],
     },
     {
-      title: "Fullstack Developer",
+      title: "Associate Software Engineer",
       company_name: "MQL Development",
       icon: mql,
       iconBg: "#E6DEDD",
