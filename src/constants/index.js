@@ -249,7 +249,7 @@ import {
     {
       name: "3D Portfolio Website",
       description:
-        "Do I really need to explain this one?",
+        "Do I really need to explain this one? 😝",
       tags: [
         {
           name: "ReactJS",
