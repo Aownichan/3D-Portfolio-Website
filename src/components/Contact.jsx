@@ -7,12 +7,27 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 
-// hd5F31lWX3RZM0bKN
-// template_i3c96sc
-// service_v1rw10h
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 
 
 const Contact = () => {
+  
+  const [openSnack, setOpenSnack] = useState(false);
+  const [message, setMessage] = useState("");
+  const [severity, setSeverity] = useState("error");
+
+  const handleSnackOpen = () => {
+    setOpenSnack(true);
+  };
+  const handleSnackClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpenSnack(false);
+  };
+
   const formRef = useRef()
   const [form, setForm] = useState({
     name: '',
@@ -29,13 +44,23 @@ const Contact = () => {
   }
 
   const handleSubmit = (e) => {
+
     e.preventDefault()
 
+    if (!form.name || !form.email || !form.message) {
+      setMessage("Please fill all the fields.")
+      setSeverity("error")
+      handleSnackOpen()
+      return
+    }
+    
     setLoading(true)
 
     emailjs.send('service_v1rw10h', 'template_i3c96sc', {form_name: form.name, to_name: 'Aown Raza', from_email: form.email, to_email: 'Aown.Raza963@gmail.com', message: form.message}, 'hd5F31lWX3RZM0bKN')
       .then(() => {
-        alert('Your message has been sent successfully. I will get back to you soon.')
+        setMessage("Your message has been sent successfully. I will get back to you soon.")
+        setSeverity("success")
+        handleSnackOpen()
         setLoading(false)
         setForm({
           name: '',
@@ -45,12 +70,22 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
         setLoading(false)
-        alert('Something went wrong. Please try again.')
+        setMessage("Something went wrong. Please try again.")
+        setSeverity("error")
+        handleSnackOpen()
       });
 
   }
 
   return (
+    <>      
+    <Stack spacing={2} sx={{ width: '100%' }}>
+      <Snackbar open={openSnack} autoHideDuration={3000} onClose={handleSnackClose}>
+        <MuiAlert onClose={handleSnackClose} severity={severity} sx={{ width: '100%' }}>
+          {message}
+        </MuiAlert>
+      </Snackbar>
+    </Stack>
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div variants={slideIn('left', 'tween', 0.4, 0.3)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
         <p className={styles.sectionSubText}>Get in touch</p>
@@ -67,9 +102,9 @@ const Contact = () => {
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea rows='7' name='message' value={form.message} onChange={handleChange} placeholder="What do you want to say?" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
+            <textarea style={{ resize: 'none' }} rows='7' name='message' value={form.message} onChange={handleChange} placeholder="What do you want to say?" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
           </label>
-          <button type='submit' className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>{loading? 'Sending...' : 'Send'}</button>
+          <button type='submit' disabled={loading} className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>{loading? 'Sending...' : 'Send'}</button>
         </form>
       </motion.div>
 
@@ -77,6 +112,7 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
+    </>
   )
 }
 
