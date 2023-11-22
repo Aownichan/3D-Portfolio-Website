@@ -26,9 +26,10 @@ import mui from "./tech/MUI.png";
 import upwork from "./company/upwork.png";
 import mql from "./company/mql.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import EC from "./EC.png";
+import IMS from "./IMS.png";
+import SP from "./SP.png";
+import PW from "./PW.png";
 
 
 
@@ -55,9 +56,10 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
+  EC,
+  IMS,
+  SP,
+  PW,
   upwork,
   mql,
   express,

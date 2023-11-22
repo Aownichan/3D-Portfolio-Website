@@ -1,8 +1,23 @@
-# React + Vite
+# Aown Raza Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Content
+* Description
+* Technologies
+* Project Installation for Developers
 
-Currently, two official plugins are available:
+## Description
+This is a simple yet elegant 3D portfolio website. Made with love and attention to detail.
+Contains a contact section which allows users to send an email, sent directly to my personal mail address.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+```bash
+ReactJS, MaterialUI, ThreeJS, React Three Fiber, TailwindCSS, Framer Motion.
+```
+
+## Project Installation for Developers
+```bash
+git clone {repo link here}
+cd {directory name here}
+npm install
+npm run dev
+```

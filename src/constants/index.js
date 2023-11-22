@@ -15,9 +15,10 @@ import {
     docker,
     upwork,
     mql,
-    carrent,
-    jobit,
-    tripguide,
+    EC,
+    SP,
+    IMS,
+    PW,
     threejs,
     express,
     mui,
@@ -200,7 +201,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: EC,
       source_code_link: "https://github.com/Aownichan/Express-Charity",
     },
     {
@@ -221,7 +222,7 @@ import {
           color: "red-text-gradient",
         },
       ],
-      image: jobit,
+      image: SP,
       source_code_link: "https://github.com/Aownichan/SteamPunk-project",
     },
     {
@@ -242,8 +243,29 @@ import {
           color: "blue-text-gradient",
         },
       ],
-      image: tripguide,
+      image: IMS,
       source_code_link: "https://github.com/Aownichan/InventoryManagementSystem",
+    },
+    {
+      name: "3D Portfolio Website",
+      description:
+        "Do I really need to explain this one?",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ThreeJS",
+          color: "black-text-gradient",
+        },
+        {
+          name: "TailwindCSS",
+          color: "green-text-gradient",
+        },
+      ],
+      image: PW,
+      source_code_link: "https://github.com/Aownichan/3D-Portfolio-Website",
     },
   ];
   
