@@ -192,6 +192,35 @@
   transform: translateZ(0);
 }
 
+#body {
+  height: 30vw;
+  width: 100vw;
+  margin: 0rem;
+  overflow: hidden;
+  padding-left: 20%;
+}
+
+#title {
+  padding-left: 20%;
+}
+
+#image-track {
+  margin-top: 15%;
+  display: flex;
+  gap: 4vmin;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+  width: 37vmin;
+  height: 36vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {
