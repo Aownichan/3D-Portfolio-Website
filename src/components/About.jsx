@@ -33,7 +33,7 @@ const About = () => {
       <motion.p className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]' variants={fadeIn("","",0.1,1)}>  
       As a software engineer, I am passionate about using technology to solve complex problems and make a positive impact on the world. 
       <br/>With a strong foundation in computer science principles and a thirst for learning, I am always seeking new opportunities to grow and develop my skills. 
-      <br/>I am always excited to with with team of like-minded individuals; with whom I can contribute my skills and learn from experienced professionals. 
+      <br/>I am always excited to with team of like-minded individuals; with whom I can contribute my skills and learn from experienced professionals. 
       <br/>I am eager to make a meaningful contribution to the field of software engineering and be a part of a team that is driving innovation and change.
       </motion.p>
 
