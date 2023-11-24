@@ -66,13 +66,13 @@ const Gallery = () => {
             <div id="body">
                 <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
 
-                    <img className="image" src="/src/assets/gallery/SteamPunk_About.png" draggable="false" />
-                    <img className="image" src="/src/assets/gallery/SteamPunk_Games.png" draggable="false" />
-                    <img className="image" src="/src/assets/gallery/SteamPunk_Studio.png" draggable="false" />                    
-                    <img className="image" src="/src/assets/gallery/Express_Map.png" draggable="false" />
-                    <img className="image" src="/src/assets/gallery/Express_Chat.png" draggable="false" />
-                    <img className="image" src="/src/assets/gallery/Express_Graphs.png" draggable="false"/>
-                    <img className="image" src="/src/assets/gallery/Express_Donations.png" draggable="false" />
+                    <img className="image" src="https://i.imgur.com/bvZs47s.png" draggable="false" />
+                    <img className="image" src="https://i.imgur.com/djNYQ74.png" draggable="false" />
+                    <img className="image" src="https://i.imgur.com/LxBjKdV.png" draggable="false" />                    
+                    <img className="image" src="https://i.imgur.com/JWFKepM.png" draggable="false" />
+                    <img className="image" src="https://i.imgur.com/aQO2WZY.png" draggable="false" />
+                    <img className="image" src="https://i.imgur.com/JQX3bY8.png" draggable="false"/>
+                    <img className="image" src="https://i.imgur.com/MQxJW09.png" draggable="false" />
                     
                 </div>
             </div>
