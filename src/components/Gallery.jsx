@@ -65,6 +65,7 @@ const Gallery = () => {
             </div>
             <div id="body">
                 <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+
                     <img className="image" src="/src/assets/gallery/SteamPunk_About.png" draggable="false" />
                     <img className="image" src="/src/assets/gallery/SteamPunk_Games.png" draggable="false" />
                     <img className="image" src="/src/assets/gallery/SteamPunk_Studio.png" draggable="false" />                    
@@ -72,6 +73,7 @@ const Gallery = () => {
                     <img className="image" src="/src/assets/gallery/Express_Chat.png" draggable="false" />
                     <img className="image" src="/src/assets/gallery/Express_Graphs.png" draggable="false"/>
                     <img className="image" src="/src/assets/gallery/Express_Donations.png" draggable="false" />
+                    
                 </div>
             </div>
         </div>
