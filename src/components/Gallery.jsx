@@ -1,6 +1,5 @@
-import React from 'react'
 import { motion } from 'framer-motion'
-import { fadeIn, textVariant } from '../utils/motion'
+import { textVariant } from '../utils/motion'
 import { styles } from '../styles'
 import { useEffect } from 'react'
 
@@ -58,7 +57,6 @@ const Gallery = () => {
 
     return (
         <div id='wrap'>
-        
             <div id='title'>
                 <motion.div variants={textVariant()}>
                     <p className={styles.sectionSubText}>My Work</p>
