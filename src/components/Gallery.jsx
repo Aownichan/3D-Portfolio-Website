@@ -22,7 +22,7 @@ const Gallery = () => {
         const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
             maxDelta = window.innerWidth / 2;
 
-        const percentage = (mouseDelta / maxDelta) * -100,
+        const percentage = (mouseDelta / maxDelta) * -140,
             nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
             nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
@@ -65,14 +65,13 @@ const Gallery = () => {
             </div>
             <div id="body">
                 <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-                    <img className="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" />
-                    <img className="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" />
                     <img className="image" src="/src/assets/gallery/SteamPunk_About.png" draggable="false" />
-                    <img className="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" />
-                    <img className="image" src="/src/assets/gallery/SteamPunk_Studio.png" draggable="false" />
-                    <img className="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" />
                     <img className="image" src="/src/assets/gallery/SteamPunk_Games.png" draggable="false" />
-                    <img className="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" />
+                    <img className="image" src="/src/assets/gallery/SteamPunk_Studio.png" draggable="false" />                    
+                    <img className="image" src="/src/assets/gallery/Express_Map.png" draggable="false" />
+                    <img className="image" src="/src/assets/gallery/Express_Chat.png" draggable="false" />
+                    <img className="image" src="/src/assets/gallery/Express_Graphs.png" draggable="false"/>
+                    <img className="image" src="/src/assets/gallery/Express_Donations.png" draggable="false" />
                 </div>
             </div>
         </div>
