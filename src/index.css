@@ -11,6 +11,28 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  cursor: none;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #804dee;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease;
+  transition-property: width, height, border;
+  z-index: 9999;
+  pointer-events: none;
 }
 
 .hash-span {
@@ -226,6 +248,7 @@
   object-fit: cover;
   object-position: 100% center;
 }
+
 
 @keyframes mulShdSpin {
   0%,
