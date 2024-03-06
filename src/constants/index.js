@@ -22,6 +22,7 @@ import {
     threejs,
     express,
     mui,
+    mudirr
   } from "../assets";
   
   export const navLinks = [
@@ -145,12 +146,24 @@ import {
       company_name: "MQL Development",
       icon: mql,
       iconBg: "#E6DEDD",
-      date: "September 2023 - Present",
+      date: "September 2023 - January 2024",
       points: [
         "Developing and maintaining web applications using MERN stack and other related technologies.",
         "Developing and maintaining desktop applications using C# (.NET) and other related technologies.",
         "Integrating MT4 and MT5 with external APIs and desktop applications to perform automated trading.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      ],
+    },
+    {
+      title: "Full-Stack Developer",
+      company_name: "Mudirr",
+      icon: mudirr,
+      iconBg: "#E6DEDD",
+      date: "February 2024 - Present",
+      points: [
+        "Developing and maintaining various startups using MERN stack and other related technologies.",
+        "Deploying and maintaining web applications on AWS and other cloud platforms.",
+        "Creating containerized applications using Docker.",
       ],
     },
   ];

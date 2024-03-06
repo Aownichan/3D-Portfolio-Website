@@ -25,6 +25,7 @@ import mui from "./tech/MUI.png";
 
 import upwork from "./company/upwork.png";
 import mql from "./company/mql.png";
+import mudirr from "./company/mudirr.png";
 
 import EC from "./EC.png";
 import IMS from "./IMS.png";
@@ -63,5 +64,6 @@ export {
   upwork,
   mql,
   express,
-  mui
+  mui,
+  mudirr
 };
