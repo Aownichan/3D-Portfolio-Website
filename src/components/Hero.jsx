@@ -19,9 +19,9 @@ const Hero = () => {
       <div className='absolute xs:bottom-0 bottom-32 w-full flex justify-center items-center'>
 
         <a href='#about'>
-          <div className='w-[35px] h-[65px] rounded-3xl border-4 border-seconday flex justify-center itels-start p-2'>
-            <motion.dev animate = {{ y: [0,24,0] }} transition={{duration: 4, repeat: Infinity, repeatType: 'loop'}} className = "w-3 h-3 rounded-full bg-secondary mb-1"  />
-          </div>
+            <div className='w-[65px] h-[35px] rounded-3xl border-4 border-seconday flex items-center justify-start p-2'>
+                <motion.div animate = {{ x: [0, 24, 0] }} transition={{duration: 4, repeat: Infinity, repeatType: 'loop'}} className = "w-3 h-3 rounded-full bg-secondary mr-1"  />
+            </div>
         </a>
 
       </div>
